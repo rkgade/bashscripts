@@ -1,0 +1,17 @@
+#!/bin/bash
+
+$1
+
+
+
+ba1=$( basename $1 .txt)
+ba2=$( basename -s $1 .txt)
+da=$(date +%F)
+cp=$( cp $1 $ba1'_'$da$ba2)
+
+
+ 
+ph=$(ls)
+echo  $ph
+
+echo $#
